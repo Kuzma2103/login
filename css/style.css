@@ -50,7 +50,13 @@ h1, h2, h3 {
 }
 
 #signin .logo {
-    margin-bottom: 8vh;
+    margin-bottom: 3vh;
+    transition: all 0.5s;
+}
+
+#signin .logo:hover {
+    color: #f96816;
+    cursor: default;
 }
 
 #signin label {
@@ -74,6 +80,46 @@ h1, h2, h3 {
     width: 100%;
 }
 
+#signin .secondary-btn,
+.or,
+.links {
+    width: 60%;
+}
+
+#signin .links a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    display: block;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+#signin .or {
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+
+#signin .or span {
+    color: #f96816;
+}
+
+
+/* FOOTER */
+#main-footer {
+    color: #ccc;
+    text-align: center;
+    font-size: 0.8rem;
+    max-width: 80%;
+    padding: 2rem 0;
+}
+
+#main-footer a {
+    color: #f96816;
+    text-decoration: underline;
+    
+}
+
 /* BUTTONS */
 .primary-btn {
     padding: 0.7rem 1rem;
@@ -93,6 +139,28 @@ h1, h2, h3 {
 .primary-btn:hover {
     background: #ff7b39;
 }
+
+.secondary-btn {
+    padding: 0.7rem 1rem;
+    height: 2.7rem;
+    display: block;
+    border: 1px solid #f4f4f4;
+    border-radius: 2px;
+    font-weight: 500;
+    background: none;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.secondary-btn:hover {
+    border-color: #ff7b39;
+    color: #ff7b39;
+}
+
+
 
 /* MEDIA QUERIES */
 @media(min-width: 1200px) {
