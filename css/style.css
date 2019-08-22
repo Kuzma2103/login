@@ -1,6 +1,8 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -93,6 +95,11 @@ h1, h2, h3 {
     display: block;
     text-align: center;
     font-size: 0.9rem;
+    transition: all 0.5s;
+}
+
+#signin .links a:hover {
+    color: #f96816;
 }
 
 #signin .or {
@@ -104,6 +111,27 @@ h1, h2, h3 {
     color: #f96816;
 }
 
+/* SHOWCASE */
+#showcase {
+    display: flex;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../img/login-bg.jpg') no-repeat center center / cover;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#showcase .showcase-text {
+    font-size: 3rem;
+    width: 100%;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+#showcase .secondary-btn {
+    width: 60%;
+    margin: auto;
+}
 
 /* FOOTER */
 #main-footer {
@@ -160,8 +188,6 @@ h1, h2, h3 {
     color: #ff7b39;
 }
 
-
-
 /* MEDIA QUERIES */
 @media(min-width: 1200px) {
     #left {
@@ -170,5 +196,25 @@ h1, h2, h3 {
 
     #right {
         flex: 6;
+    }
+}
+
+@media(max-width: 768px) {
+    
+    body {
+        /* overflow: auto; */
+    }
+
+    #left {
+        justify-content: start;
+        margin-top: 5vh;
+    }
+
+    #right {
+        display: none;
+    }
+
+    #main-footer {
+        padding-top: 1rem;
     }
 }
